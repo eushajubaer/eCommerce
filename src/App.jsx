@@ -9,6 +9,7 @@ import { HiBars3BottomLeft } from "react-icons/hi2";
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart,FaCarSide,FaUndoAlt  } from "react-icons/fa";
 import { PiNumberTwoBold } from "react-icons/pi";
 import Heading from './components/Heading'
+import Banner from "../src/assets/banner.png"
 
 
 function App() {
@@ -68,7 +69,9 @@ function App() {
    {/* Rectangle Part End */}
 
    {/* Banner Part Start  */}
-<div className="bg-bannerImg py-[350px] "></div>
+<div className=" ">
+<Image imgSrc={Banner}/>
+</div>
    {/* Banner Part End */}
 
    {/* Information Part Start  */}
