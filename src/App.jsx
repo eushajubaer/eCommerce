@@ -68,7 +68,7 @@ function App() {
    {/* Rectangle Part End */}
 
    {/* Banner Part Start  */}
-<div className="bg-bannerImg py-[300px] "></div>
+<div className="bg-bannerImg py-[350px] "></div>
    {/* Banner Part End */}
 
    {/* Information Part Start  */}
