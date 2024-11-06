@@ -9,14 +9,30 @@ import { HiBars3BottomLeft } from "react-icons/hi2";
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart,FaCarSide,FaUndoAlt  } from "react-icons/fa";
 import { PiNumberTwoBold } from "react-icons/pi";
 import Heading from './components/Heading'
+import Ads_one from '../src/assets/Ad_one.png'
+import Ads_two from '../src/assets/Ad_two.png'
+import Ads_three from '../src/assets/Ad_three.png'
+import Product from './components/Product'
 
+import "slick-carousel/slick/slick.css";
 
+import Slider from "react-slick";
+import PrevArrow from './PrevArrow'
+import NextArrow from './NextArrow'
 
 function App() {
-
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow/>,
+  };
 
   return (
     <>
+    
     {/* Menu Part Start  */}
    <div className="py-7 bg-white">
     <Container>
@@ -100,8 +116,55 @@ function App() {
     </Container>
    </div>
    {/* Information Part End */}
+
+   {/* Ads Part One Start  */}
+   <div className="py-[120px]">
+    <Container>
+      <Flex className={'justify-between'}>
+        <div className="w-[49%]">
+          <img src={Ads_one} alt={'Ads_one'} />
+        </div>
+        <div className="w-[49%]">
+        <img src={Ads_two} alt={'Ads_two'} />
+        <img src={Ads_three} alt={'Ads_three'} className={'pt-8'}/>       
+        </div>
+      </Flex>
+    </Container>
+   </div>
+   {/* Ads Part One End */}
+   <Container>
+ 
+   </Container>
+  
+
+   {/* Ads Part Two Start  */}
+   <div className="py-[80px]">
+    <Container>
+      <Heading as={'h2'} text={'New Arrivals'} className={'font-DM font-bold text-[39px] pb-10'}/>
+      <Slider {...settings}>
+   <div className="w-[24%] relative group px-3">
+        <Product/>
+      </div>
+      <div className="w-[24%] relative group px-3">
+        <Product/>
+      </div>
+      <div className="w-[24%] relative group px-3">
+        <Product/>
+      </div>
+      <div className="w-[24%] relative group px-3">
+        <Product/>
+      </div>
+      <div className="w-[24%] relative group px-3">
+        <Product/>
+      </div>
+    </Slider>
+    </Container>
+   </div>
+   {/* Ads Part Two End */}
     </>
   )
 }
 
 export default App
+
+

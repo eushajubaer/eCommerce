@@ -17,7 +17,8 @@ export default {
         'menuColor': '#767676',
         'menuColorH': '#262626',
         'RectangleColor': '#F5F5F3',
-        'informationColor': '#6D6D6D'
+        'informationColor': '#6D6D6D',
+        'ArrowColor': '#979797'
       },
       width: {
         'logoW': '30%',
