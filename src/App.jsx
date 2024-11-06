@@ -9,7 +9,7 @@ import { HiBars3BottomLeft } from "react-icons/hi2";
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart,FaCarSide,FaUndoAlt  } from "react-icons/fa";
 import { PiNumberTwoBold } from "react-icons/pi";
 import Heading from './components/Heading'
-import Banner from "../src/assets/banner.png"
+
 
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
           <Heading as={'h3'} text={'Shop by Category'} className={'font-DM text-[14px]'}/>
           </Flex>
         </div>
-        <div className="w-searchW relative">
+        <div className="w-searchW  relative ">
           <input type="text" className={'p-5 bg-white w-searchberW'} placeholder='Search Products' />
           <FaSearch className={'absolute right-[214px] bottom-[25px]'}/>
         </div>
@@ -69,8 +69,8 @@ function App() {
    {/* Rectangle Part End */}
 
    {/* Banner Part Start  */}
-<div className=" ">
-<Image imgSrc={Banner}/>
+<div className="bg-bannerImg bg-no-repeat bg-cover bg-center py-[300px] ">
+
 </div>
    {/* Banner Part End */}
 
